@@ -13,7 +13,10 @@ your files to.
 4) git status (check whether the files are tracked or not)
 5) git rm -cache (i guess ) to stop tracking a file
 6) git commit -m "message you want to add while committing your file"
-7) git log / git log --oneline (you'll see all the versions you've committed)
-8)
+7) git log / git log --oneline (you'll see all the versions you've committed
+
+
+yeyyy
+wohooooooooooooooooooooo
 
 
