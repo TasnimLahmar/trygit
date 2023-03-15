@@ -1,1 +1,19 @@
 tatou tass
+//most important thing:
+ you have to add your github email address and username you'll commit 
+your files to.
+
+ * git config --global user.email "tasnim.lahmer"@gmail.com
+ * git config --global user.name "TasnimLahmar"
+ * git config --list (you'll see your email address) 
+//after that :
+1) change path to the directory of your project (cd ....)
+2) git init (create git repository in your project directory to track all the changes you do)
+3) git add file.txt (ask .git to track all the changes in file.txt)
+4) git status (check whether the files are tracked or not)
+5) git rm -cache (i guess ) to stop tracking a file
+6) git commit -m "message you want to add while committing your file"
+7) git log / git log --oneline (you'll see all the versions you've committed)
+8)
+
+
