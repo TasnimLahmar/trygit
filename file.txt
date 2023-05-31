@@ -13,10 +13,47 @@ your files to.
 4) git status (check whether the files are tracked or not)
 5) git rm -cache (i guess ) to stop tracking a file
 6) git commit -m "message you want to add while committing your file"
-7) git log / git log --oneline (you'll see all the versions you've committed
+7) git log / git log --oneline (you'll see all the versions you've committed)
+8) git checkout 6b88evg (go back in time to an old version and do some changes without affecting 
+any other one)
+NB: 6b88evg this code appears when you apply "git log --oneline " after every version you 
+find a different code
 
+9)to go back to the latest version : git checkout master
+10) git revert 68duhf4 ( to delete one particular version you don't need anymore)
+NB: it will appear something weard : just press shift then write " :wq " and then press enter 
+11) git reset 68mglg  (to rewind your work back to a level : you'll completely delete  whatever 
+you've done after that).
+NB: git reset 67rgm --hard (because even when you do 11 the code you don't need anymore 
+can still appear so we add --hard to force going back to the old code).
 
-yeyyy
-wohooooooooooooooooooooo
+//BRANCHES CHAPTER
 
+we need them to do works seperately and then merge them to one work without having to 
+work on the same branch which helps reducing massive errors that can ruin all the project
+//
+1) git branch feature-1 (added a branche named ''feature-1'' under the master branch)
+2) git branch -a (to see all the branches you have) the one colored with green is the one you're
+working into)
+3) git checkout feature-1  (to switch to the branch feature-1)
+//now you can add and commit files in that branch
+4) // if things went wrong and you want to delete that branch:
+4.1)  go back to the master branch: git checkout master
+4.2) git branch -d feature-1 (or -D if your branch is not merged yet)
 
+      faza:
+you can create and switch to the new branch in one line:
+""" git checkout -b feature-a """ ==> now you're in feature-a branch that you just created
+ 
+5)git push https://github.com/TasnimLahmar/trygit.git master  (push your work on your 
+github repository)
+
+TRICK : instead of typing the whole url each time you push you can set a name to the url
+git remote add origin  https://github.com/TasnimLahmar/trygit.git master
+//now you named the url "origin"
+
+you just need to type : git push origin master
+
+6)//clone a project from github: git clone url
+7) change its name:  git remote -v
+8) push: git push origin master
